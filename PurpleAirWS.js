@@ -1,7 +1,3 @@
-// Author: Trevor Davis
-// Company: VFWD
-// Date: 12/05/2024  
-
 const puppeteer = require('puppeteer');
 const nodemailer = require('nodemailer');
 
@@ -21,7 +17,7 @@ var b_Warn = true;
     
     
 
-    // Navigate the page to a URL.
+    // Navigate the page to a URL
     await Promise.all([
     page.goto('https://map.purpleair.com/air-quality-standards-us-epa-aqi?opt=%2F1%2Flp%2Fa10%2Fp604800%2FcC0&select=4491#14.21/38.09204/-122.25228', 
       { waitUntil: ['load', 'networkidle0'] }),   
@@ -62,11 +58,9 @@ var b_Warn = true;
 
 
   })();
-  
-  // Recursive loop that runs every 10 min
   setTimeout(() => {
     resolve(getAQI()); // Recursive call
-  }, 600000); // Ensure asynchronous execution
+  }, 300000); // Ensure asynchronous execution
   });
 }
 
