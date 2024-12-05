@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "nodemailer": "^6.9.16",
+    "puppeteer": "^23.10.1"
+  },
+  "name": "purpleair",
+  "version": "1.0.0",
+  "description": "WebScraper for purple air",
+  "main": "PurpAirPuppeteer.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
